@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&family=Dosis:wght@400;600&family=Indie+Flower&family=Sacramento&display=swap");
+@import url(/css/media.css);
+:root {
+  --primary: #007acc;
+  --dark1: #424549;
+  --dark2: #36393e;
+  --dark3: #282b30;
+  --dark4: #1e2124;
+}
+.bg-primary {
+  background-color: var(--primary);
+}
+.bg-dark1 {
+  background-color: var(--dark1);
+}
+.bg-dark2 {
+  background-color: var(--dark2);
+}
+.bg-dark3 {
+  background-color: var(--dark3);
+}
+.bg-dark4 {
+  background-color: var(--dark4);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 1.6em;
+  background-color: var(--dark2);
+}
+
+p {
+  color: aliceblue;
+  font-family: "Dosis", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--primary);
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+}
+
+.btn {
+  background-color: var(--dark3);
+  padding: 0.6rem 3rem;
+  border-radius: 1px;
+  color: aliceblue;
+  font-weight: bold;
+}
+.btn:hover {
+  background-color: var(--dark2);
+  border: 2px solid #4d4c4c;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.columns3-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  padding: 0.7rem;
+  gap: 5px;
+}
+
+.row-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+.row-flex-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+.row-flex .column1 {
+  flex: 50%;
+  padding-right: 0.5em;
+}
+.row-flex .column2 {
+  flex: 50%;
+}
+.row-flex-reverse .column1 {
+  flex: 50%;
+  padding-right: 0.5em;
+  width: 100%;
+}
+.row-flex-reverse .column2 {
+  flex: 50%;
+}
+.row-flex .column01 {
+  flex: 33%;
+}
+.row-flex .column02 {
+  flex: 33%;
+}
+.row-flex .column03 {
+  flex: 33%;
+}
+.row-flex .column01,
+.row-flex .column02,
+.row-flex .column03 {
+  text-align: -webkit-center;
+}
+
+ul {
+  list-style: none;
+}
+.fa-solid {
+  color: aliceblue;
+  font-size: 3rem;
+  padding: 1.5rem;
+}
+img {
+  width: 100%;
+}

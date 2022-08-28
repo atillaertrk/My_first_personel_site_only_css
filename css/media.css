@@ -1,0 +1,106 @@
+/* 
+Breakpoint	Class infix	Dimensions
+X-Small	    None<576px
+Small	    sm	≥576px
+Medium	    md	≥768px
+Large	    lg	≥992px
+Extralarge	xl	≥1200px
+Ex_tralarge	xxl	≥1400px 
+*/
+@media (max-width: 768px) {
+  /* SIDEBAR AND HEADER */
+  .body {
+    font-size: 1.6em !important;
+    overflow: hidden !important;
+  }
+  .main-container {
+    width: 100%;
+    margin-top: 7em;
+  }
+  .fa-solid {
+    font-size: 1.4em !important;
+    color: whitesmoke !important;
+  }
+  .sidebar ul li a {
+    color: whitesmoke !important;
+    font: size 1.4em !important;
+  }
+  .sidebar {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    flex-direction: row;
+    height: inherit;
+    width: 100vw !important;
+    font-size: 0.7em;
+  }
+  .sidebar ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .sidebar ul li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .sidebar ul li:not(:last-child) {
+    border-right: 2px solid var(--dark4);
+  }
+  .sidebar ul li span {
+    position: inherit;
+    display: inline-block;
+    z-index: 7;
+  }
+  .sidebar ul li:hover {
+    background-color: var(--dark4);
+    transition: 0.7s;
+  }
+
+  .sidebar span {
+    display: inherit;
+  }
+  .row-flex {
+    flex-direction: column;
+    gap: 2em;
+  }
+  /* ABOUT */
+  #about {
+    margin-top: 2em;
+  }
+  #about h1,
+  #about h2 {
+    text-align: center;
+  }
+  /* PRODUCTS */
+  #products .card-item {
+    width: 50vw;
+  }
+
+  /* GALLERY */
+  #gallery {
+    margin-bottom: 0;
+  }
+  .gallery__item {
+    flex: 50% !important;
+    color: rgb(200, 200, 200) !important;
+    font-size: 0.7em !important;
+  }
+
+  /* CONTACT */
+  #contact {
+    flex-direction: column;
+    gap: 1em;
+  }
+  #contact .citem {
+    height: min-content;
+    padding: 0.5em;
+  }
+
+  /* TEXT-M3 */
+  #text-me {
+    margin-top: 4em;
+    flex-direction: column;
+  }
+}
